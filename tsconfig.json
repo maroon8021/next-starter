@@ -3,7 +3,8 @@
     "strict": true,
     "baseUrl": "./",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "c/*": ["components/*"]
     },
     "target": "es5",
     "lib": [

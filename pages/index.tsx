@@ -3,8 +3,11 @@ import Link from "next/link"
 import Head from "next/head"
 import Nav from "../components/nav"
 
+import Test from "c/common/text"
+
 const Home = () => (
   <div>
+    <Test />
     <Head>
       <title>Home</title>
       <link rel="icon" href="/favicon.ico" />

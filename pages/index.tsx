@@ -5,11 +5,12 @@ import { css, jsx } from "@emotion/core"
 import { DraggableLists } from "c/top/draggable-lists"
 import { StateType, reducer } from "c/top/reducers"
 import { useReducer } from "react"
+import { Input } from "c/top/input"
 
 const container = css`
   max-width: 600px;
   margin: 0 auto;
-  margin-top: 9rem;
+  margin-top: 10rem;
 `
 
 const lists = ["test 1", "test 2", "test 3", "test 4", "test 5"]
@@ -30,6 +31,7 @@ const Home = () => {
       </Head>
       <Header />
       <div css={container}>
+        <Input />
         <DraggableLists lists={state.lists} dispatch={dispatch} />
       </div>
     </>

@@ -184,9 +184,21 @@ const textDecoration = css`
   }
 `
 
+const removeButtonStyle = css`
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+  }
+`
+
 export default css`
 ${resetBase}
 ${boxSizingExtend}
 ${rem}
 ${textDecoration}
+${removeButtonStyle}
 `
